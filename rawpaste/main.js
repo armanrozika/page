@@ -79,3 +79,10 @@ document.getElementById('delete').addEventListener('click', function(){
   var getValue = document.getElementById('textarea').value = "";
   var getValue = document.getElementById('inputTitle').value= "";
 });
+
+function myFunction(){
+  var getValue = document.getElementById('textarea');
+  getValue.select();
+  document.execCommand('copy');
+  alert("Copied the text");
+}
