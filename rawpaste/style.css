@@ -1,0 +1,154 @@
+body {
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: #ecf0f1;
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+h1 {
+  color: #3498db;
+}
+
+.container p {
+  text-align: center;
+  margin-left: 35px;
+  line-height: 1.6;
+  font-family: helvetica, arial;
+  color: #2c3e50;
+}
+
+.container  a{
+  color: #8e44ad;
+}
+
+#childWrapper {
+  width: 100%;
+  height: auto;
+  padding: 1px;
+  margin-left: 0;
+}
+
+#inputTitle {
+  width: 30%;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: helvetica, arial;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.sideText {
+  width: 250px;
+  height: 150px;
+  margin-left: 3px;
+  margin-bottom: 0;
+  border-color: #3498db;
+  border-radius: 3px;
+}
+
+
+#textarea, #sideText {
+  border-color: #3498db;
+  border-radius: 3px;
+}
+
+.title {
+  font-weight: bold;
+  color: purple;
+  margin-left: 3px;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+button {
+  margin-right: 5px;
+  padding: 7px;
+}
+
+#copy {
+  margin-top: 10px;
+  font-size: 17px;
+  background-color: #bdc3c7;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+#delete {
+  margin-top: 10px;
+  font-size: 17px;
+  background-color: #e74c3c;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+#save {
+  margin-top: 10px;
+  font-size: 17px;
+  background-color: #3498db;
+  outline: 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+#copy:hover{
+  background-color: #7f8c8d;
+}
+
+#delete:hover{
+background-color: #c0392b;
+}
+
+#save:hover {
+  background-color: #2980b9;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.lista {
+  margin-right: 100px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+  color: #2980b9;
+}
+
+.listb {
+  margin-right: 100px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+  color: #c0392b;
+}
+
+#open {
+  color: #3498db;
+}
+
+#remove {
+  color: #e74c3c;
+}
+.addedBox {
+  margin-bottom: 5px;
+  margin-right: 30px;
+  margin-top: 25px;
+  float: left;
+  list-style: none;
+}
