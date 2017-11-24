@@ -8,7 +8,7 @@ document.getElementById('save').addEventListener('click', addChild);
 function addChild(getValue){
   var getValue = document.getElementById('textarea').value;
   var titleValue = document.getElementById('inputTitle').value;
-  if (getValue && titleValue) makeChild();
+  if (getValue || titleValue) makeChild();
   textarea.value= '';
   inputTitle.value= '';
 }
