@@ -1,25 +1,63 @@
+var data = (localStorage.getItem('saveData')) ? JSON.parse(localStorage.getItem('saveData')):{
+  title: [],
+  text: []
+};
+
+renderData();
+
 document.getElementById('save').addEventListener('click', addChild);
 
 //save data local storage
 
-
 //get the input value
 function addChild(getValue){
-  var getValue = document.getElementById('textarea').value;
   var titleValue = document.getElementById('inputTitle').value;
+  var getValue = document.getElementById('textarea').value;
   if (getValue && titleValue){
-    makeChild();
+    printChild(titleValue, getValue);
   }
   textarea.value= '';
   inputTitle.value= '';
+}
 
+function dataUpdated(){
+  localStorage.setItem('saveData', JSON.stringify(data));
 }
 
 
-function makeChild(){
+function renderData(){
+  if (!data.title.length && data.text.length) return;
+
+  for (var i=0; i < data.title.length&&data.text.length; i++){
+    var titleValue = data.title[i];
+    var getValue = data.text[i];
+    makeChild(titleValue, getValue);
+  }
+}
+
+
+
+function printChild(titleValue, getValue){
+  makeChild(titleValue, getValue);
+  document.getElementById('inputTitle').value='';
+  document.getElementById('textarea').value='';
+
+
+  data.title.push(titleValue);
+  data.text.push(getValue);
+
+  dataUpdated();
+}
+
+
+
+
+function makeChild(title, text){
+
   //get both of values typed in the box
-  var getValue = document.getElementById('textarea').value;
-  var titleValue = document.getElementById('inputTitle').value;
+//  var getValue = document.getElementById('textarea').value;
+  //var titleValue = document.getElementById('inputTitle').value;
+
 
   //get the container of child box wrapper
   var childBox = document.getElementById('added');
@@ -31,12 +69,12 @@ function makeChild(){
 
   var childTitle = document.createElement('p');
   childTitle.classList.add("title");
-  childTitle.textContent = titleValue;
+  childTitle.textContent = title;
   childContainer.appendChild(childTitle);
 
   var childText = document.createElement('textarea');
   childText.classList.add('sideText');
-  childText.textContent = getValue;
+  childText.textContent = text;
   childContainer.appendChild(childText);
 
   var ulText = document.createElement('ul');
@@ -68,7 +106,9 @@ function makeChild(){
     ulText.remove();
     openChild.remove();
     removeChild.remove();
-
+    data.title.splice(data.title.indexOf(title), 1);
+    data.text.splice(data.text.indexOf(text), 1);
+    dataUpdated();
   });
 
 }

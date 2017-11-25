@@ -121,6 +121,7 @@ ul {
   margin-top: 0;
   margin-left: 20px;
   margin-bottom: 20px;
+  padding-bottom: 40px;
   display: inline;
   list-style: none;
   cursor: pointer;
@@ -132,6 +133,7 @@ ul {
   margin-top: 0;
   margin-left: 20px;
   margin-bottom: 20px;
+  padding-bottom: 40px;
   display: inline;
   list-style: none;
   cursor: pointer;
@@ -151,4 +153,39 @@ ul {
   margin-top: 25px;
   float: left;
   list-style: none;
+}
+
+@media (max-width: 1200px){
+  .container {
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  #textarea{
+    width: 100%;
+  }
+
+  .lista, .listb{
+    margin-right: 50px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  #inputTitle, #textarea {
+    font-size: 16px;
+  }
+  
+  #textarea {
+    height: 260px;
+  }
+
+  h1{
+    margin-bottom:0;
+    margin-top:0;
+  }
+
+  .container p {margin:auto; padding-top: 5px;}
+
 }
