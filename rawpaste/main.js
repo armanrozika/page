@@ -1,17 +1,20 @@
 document.getElementById('save').addEventListener('click', addChild);
 
-
-
+//save data local storage
 
 
 //get the input value
 function addChild(getValue){
   var getValue = document.getElementById('textarea').value;
   var titleValue = document.getElementById('inputTitle').value;
-  if (getValue && titleValue) makeChild();
+  if (getValue && titleValue){
+    makeChild();
+  }
   textarea.value= '';
   inputTitle.value= '';
+
 }
+
 
 function makeChild(){
   //get both of values typed in the box
@@ -24,7 +27,7 @@ function makeChild(){
   //get the child container
   var childContainer = document.createElement('li');
   childContainer.classList.add("addedBox");
-  childBox.appendChild(childContainer);
+  childBox.insertBefore(childContainer, childBox.childNodes[0]);
 
   var childTitle = document.createElement('p');
   childTitle.classList.add("title");
@@ -61,10 +64,11 @@ function makeChild(){
   removeChild.addEventListener('click', function(){
     childContainer.remove();
     childTitle.remove();
-    cchildText .remove();
+    childText .remove();
     ulText.remove();
     openChild.remove();
     removeChild.remove();
+
   });
 
 }
@@ -84,5 +88,4 @@ function myFunction(){
   var getValue = document.getElementById('textarea');
   getValue.select();
   document.execCommand('copy');
-  alert("Copied the text");
 }
