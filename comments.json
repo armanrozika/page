@@ -1,55 +1,142 @@
 [
-    {
-        "id": "fa1ca3c1-cc1e-4ed9-86b8-f60d8312d499",
-        "author": "Neal Topham",
-        "avatar": "https://lorempixel.com/100/100/people/1/",
-        "date": "2017-02-08T00:30:05.552Z",
-        "message": "Mungkin ada fenomena paranormal yang tidak bisa dijelaskan. Lebih baik nyala mati sendiri daripada tidak nyala sama sekali",
-        "point": 3,
-        "replies": [
-            {
-                "id": "4ba9a8d1-cbe9-4906-ac23-0030f5df027e",
-                "author": "Dyan Shankin",
-                "avatar": "https://lorempixel.com/100/100/people/2/",
-                "date": "2017-02-08T00:33:20.369Z",
-                "message": "Confirm, itu kemungkinan aktivitas paranormal.",
-                "point": 0
-            }
-        ]
-    },
-    {
-        "id": "9b3d6fe2-e3fc-47c6-b09a-f2b40547b101",
-        "author": "Jacquelyne Garrity",
-        "avatar": "https://lorempixel.com/100/100/people/2/",
-        "date": "2017-02-08T00:32:18.214Z",
-        "message": "Saya mengalami hal serupa. Laptop yang digunakan Toshiba L645. Tolong infonya.",
-        "point": 0,
-        "replies": [
-            {
-                "id": "e157bcd4-68d7-4d2a-ade1-da50f0913daf",
-                "author": "Shella Tamashiro",
-                "avatar": "https://lorempixel.com/100/100/people/1/",
-                "date": "2017-02-09T00:33:20.369Z",
-                "message": "Ada kemungkinan ini masalah virus. Coba dilakukan virus scan menggunakan software anti virus.",
-                "point": 1
-            },
-            {
-                "id": "ff441e8a-7465-4527-bd9a-ed6d3ad5fdef",
-                "author": "Marcelino Stangle",
-                "avatar": "https://lorempixel.com/100/100/people/1/",
-                "date": "2017-02-09T00:37:38.411Z",
-                "message": "Setuju",
-                "point": 1
-            }
-        ]
-    },
-    {
-        "id": "27526171-1236-4785-a67f-72b48989e3ff",
-        "author": "Lawanda Schey",
-        "avatar": "https://lorempixel.com/100/100/people/3/",
-        "date": "2017-02-09T00:32:18.214Z",
-        "message": "Apakah ada solusi lain? Sudah dicoba untuk scan virus tapi kasus ini tetap ada.",
-        "point": 1,
-        "replies": []
-    }
+  {
+    "id": "FT92663",
+    "amount": 4617786,
+    "unique_code": 211,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "9059001655",
+    "beneficiary_name": "Jethro Cox",
+    "beneficiary_bank": "btpn",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:19:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT86314",
+    "amount": 2665199,
+    "unique_code": 408,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "1410627558",
+    "beneficiary_name": "Sammy-Jo Mccall",
+    "beneficiary_bank": "btpn",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:18:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT80586",
+    "amount": 1972238,
+    "unique_code": 677,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "7483561561",
+    "beneficiary_name": "Miranda Bannister",
+    "beneficiary_bank": "muamalat",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:17:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT11346",
+    "amount": 2396239,
+    "unique_code": 657,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "5400610633",
+    "beneficiary_name": "Rhiannan Simmons",
+    "beneficiary_bank": "bri",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:16:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT86058",
+    "amount": 4394077,
+    "unique_code": 202,
+    "status": "PENDING",
+    "sender_bank": "bni",
+    "account_number": "6946642143",
+    "beneficiary_name": "Rhiannan Simmons",
+    "beneficiary_bank": "btpn",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:15:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT86853",
+    "amount": 1748355,
+    "unique_code": 852,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "1214060805",
+    "beneficiary_name": "Sammy-Jo Mccall",
+    "beneficiary_bank": "bca",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:14:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT37160",
+    "amount": 607395,
+    "unique_code": 383,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "962936732",
+    "beneficiary_name": "Miranda Bannister",
+    "beneficiary_bank": "bsm",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:13:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT52206",
+    "amount": 4976452,
+    "unique_code": 758,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "9233132953",
+    "beneficiary_name": "Rhiannan Simmons",
+    "beneficiary_bank": "bri",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:12:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT70277",
+    "amount": 780172,
+    "unique_code": 609,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "8117165056",
+    "beneficiary_name": "Jethro Cox",
+    "beneficiary_bank": "bsm",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:11:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  },
+  {
+    "id": "FT73413",
+    "amount": 1175820,
+    "unique_code": 666,
+    "status": "SUCCESS",
+    "sender_bank": "bni",
+    "account_number": "7292222805",
+    "beneficiary_name": "Sammy-Jo Mccall",
+    "beneficiary_bank": "bri",
+    "remark": "sample remark",
+    "created_at": "2019-10-11 21:10:08",
+    "completed_at": "2019-10-11 21:19:08",
+    "fee": 0
+  }
 ]
